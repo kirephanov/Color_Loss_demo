@@ -124,6 +124,18 @@ body {
     text-transform: uppercase;
 }
 
+/*
+* Attribute name
+*/
+.attribute-name {
+    color: var(--grey);
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
 /* 
 * Footer 
 */
@@ -440,6 +452,32 @@ body {
     margin: 0;
 }
 
+/*****************************  Clan page ***********************************/
+.clan-name, .clan-description, .clan-status {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 50;
+}
+.clan-status-open {
+    color: var(--green);
+}
+.clan-status-close {
+    color: var(--red);
+}
+.clan-members {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.clan-members__member__name {
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--grey);
+}
+
 /******************* Media queries **********************/
 @media (max-width: 900px) {
     /* 
@@ -469,6 +507,11 @@ body {
         font-size: 40px
     }
 
+    /* Attribute name */
+    .attribute-name {
+        font-size: 16px;
+    }
+
     /* 
     * Navbar
     */
@@ -487,6 +530,16 @@ body {
     */
     .article__title {
         font-size: 40px;
+    }
+
+    /* 
+    * Clan page
+    */
+    .clan-name, .clan-description, .clan-status {
+        font-size: 24px;
+    }
+    .clan-members__member__name {
+        font-size: 24px;
     }
 }
 @media (max-width: 515px) {
