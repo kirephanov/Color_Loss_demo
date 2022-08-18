@@ -457,7 +457,7 @@ body {
     font-size: 36px;
     font-weight: 500;
     margin-top: 0;
-    margin-bottom: 50;
+    margin-bottom: 50px;
 }
 .clan-status-open {
     color: var(--green);
@@ -476,6 +476,39 @@ body {
     margin: 0;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--grey);
+}
+
+/*****************************  Profile page ***********************************/
+.profile-page__title {
+    font-size: 64px;
+    font-weight: 500;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+.user-name, .user-lvl, .user-colors, .user-clan {
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.user-colors-container {
+    display: flex;
+    align-items: center;
+}
+.user-colors__icon {
+    margin-left: 8px;
+    margin-bottom: 50px;
+}
+.user-logout {
+    color: var(--red);
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 70px;
+}
+.user-logout:hover {
+    text-decoration: underline;
 }
 
 /******************* Media queries **********************/
@@ -539,6 +572,23 @@ body {
         font-size: 24px;
     }
     .clan-members__member__name {
+        font-size: 24px;
+    }
+
+    /* 
+    * Profile page
+    */
+    .profile-page__title {
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .user-name, .user-lvl, .user-colors, .user-clan {
+        font-size: 24px;
+    }
+    .user-colors__icon {
+        max-width: 25px;
+    }
+    .user-logout {
         font-size: 24px;
     }
 }
@@ -655,6 +705,14 @@ body {
     /* Block 2 */
     .block2__character {
         max-height: 310px;
+    }
+
+        /* 
+    * Profile page
+    */
+    .profile-page__title {
+        font-size: 28px;
+        margin-bottom: 50px;
     }
 }
 
