@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image/x-icon" href="images/color-loss-icon.ico">
+    <title>Color Loss</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="header">
+            <div class="wrapper">
+                <nav>
+                    <div class="nav">
+                        <div class="nav__logo">
+                            <a href="#" class="nav__logo-link">
+                                <img src="images/Navbar/logo.png" alt="Color Loss" class="nav__logo-img">
+                            </a>
+                        </div>
+                        <div class="nav__menu">
+                            <div class="nav__links">
+                                <ul class="nav__menu__links">
+                                    <li class="nav__menu__links__item">
+                                        <a href="#" class="nav__menu__link">
+                                            Game info
+                                        </a>
+                                    </li>
+                                    <li class="nav__menu__links__item">
+                                        <a href="#" class="nav__menu__link">
+                                            News
+                                        </a>
+                                    </li>
+                                    <li class="nav__menu__links__item">
+                                        <a href="#" class="nav__menu__link">
+                                            Clans
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav__btn">
+                                <a href="#" class="nav__btn-link">
+                                    Play now
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Mobile menu -->
+                        <div class="mobile-menu">
+                            <div id="myNav" class="overlay">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="overlay-content">
+                                    <a href="#">Game info</a>
+                                    <a href="#">News</a>
+                                    <a href="#">Clans</a>
+                                </div>
+                            </div>
+                            <span onclick="openNav()" class="open-btn">
+                                <img src="images/Navbar/mobile-btn.svg" alt="Open" class="open-btn__icon">
+                            </span>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login -->
+    <section>
+        <div class="login-card">
+            <div class="wrapper">
+                <div class="authorization-card">
+                    <div class="authorization-card__item authorization-card__form">
+                        <p class="authorization__title">Login</p>
+                        <div class="authorization__form">
+                            <form>
+                                <div class="authorization__form-item-container">
+                                    <label for="" class="authorization__form-label">Username</label>
+                                    <div class="authorization__form-item">
+                                        <input type="text" class="authorization__form-input">
+                                    </div>
+                                </div>
+                                <div class="authorization__form-item-container">
+                                    <label for="" class="authorization__form-label">Password</label>
+                                    <div class="authorization__form-item">
+                                        <input type="password" class="authorization__form-input">
+                                    </div>
+                                </div>
+                                <div class="authorization-btn-container">
+                                    <button class="authorization-btn">Sign up</button>
+                                </div>
+                            </form>
+                            <p class="authorization-description">
+                                Don't have an account yet? <span class="authorization-description-link"><a href="register.html" class="authorization-link">Join us.</a></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="authorization-card__image login-image">
+                        <img src="images/Authorization/login-img.png" alt="" class="authorization-card__image-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <div class="wrapper">
+                <div class="footer-top">
+                    <div id="toTop" class="up-btn">
+                        <img src="images/Footer/up-btn.svg" alt="To top" class="up-btn__icon">
+                    </div>
+                    <p class="watermark">Made by <span><a href="https://github.com/kirephanov" target="_blank" class="watermark-link">Kirill Ephanov</a></span></p>
+                    <div class="footer-top__social">
+                        <a href="#" class="footer-top__social__link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                        <a href="#" class="footer-top__social__link"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-line"></div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom__content">
+                        <img src="images/Footer/logo.png" alt="" class="footer-bottom__icon">
+                        <p class="footer-bottom__description">
+                            &#169 2022 Color Loss. <br>All rights reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/up-btn.js"></script>
+    <script src="js/mobile-menu.js"></script>
+</body>
+</html>
